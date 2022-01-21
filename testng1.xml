@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	 <listeners>
+		<listener class-name="com.sanyam.frameworkpackage.TestListners"></listener>
+		<listener class-name="com.sanyam.retrylogic.TransformerRetry"></listener>
+	</listeners>
+  <test name="Test" >
+    <classes><!-- if there are 2 classes in testng.xml then testng will consider them as a single test>
+    			and will execute them from top to bottom order but if we give priority in given @Tests of both classes 
+    			then user will have to give priority in sequentially manner (in class 1 then in class 2) otherwise
+    			if it is not in sequence or same priority in both the class then testNG will start executing them togather and will consider 
+    			end of test execution even when any of the class ends and will act abnormally -->
+      <class name="com.sanyam.testproject.LoginPageTest"> </class>
+      <class name="com.sanyam.testproject.HomePageTest"> </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+

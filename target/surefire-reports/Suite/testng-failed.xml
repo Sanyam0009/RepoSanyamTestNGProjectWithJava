@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.sanyam.frameworkpackage.TestListners"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name="Test(failed)">
+    <classes>
+      <class name="com.sanyam.testproject.LoginPageTest">
+        <methods>
+          <include name="testSkip"/>
+          <include name="LoginFreeCRM"/>
+          <include name="setUp"/>
+          <include name="testCase2"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.sanyam.testproject.LoginPageTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

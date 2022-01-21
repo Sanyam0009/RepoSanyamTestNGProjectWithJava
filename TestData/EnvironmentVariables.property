@@ -1,0 +1,4 @@
+Browser = Chrome
+URL = https://ui.cogmento.com/
+ImplicitilyWait = 60
+PageLoadTimeout = 30
